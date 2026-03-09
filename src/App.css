@@ -1,0 +1,106 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dark-mode {
+  background: #111827;
+  color: white;
+}
+
+#container {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.dark-mode #container {
+  background: #1f2937;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+#clearBtn {
+  background: crimson;
+}
+#clearBtn:hover {
+  background: rgb(163, 0, 33);
+}
+
+ul {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+li {
+  background: #e5ecff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+li.striked {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.darkModeSwitch {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+  padding: 8px 14px;
+  background: #111827;
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
+
+.dark-mode .darkModeSwitch {
+  background: white;
+  color: black;
+}
